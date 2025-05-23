@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/GenericDesign.css">
+</head>
+<body>
+  <script src="../Js/Script.js"></script>
+    <button id="logoutButton" hidden>Logout</button>
+
+<div class="container">
+    <div class="header stickynavbar navbar">
+        <!-- Left: Logo and GGS -->
+        <div class="navbar-left">
+          <img src="../bilder/ChatGPT GGS logo.png" alt="GGS Logo">
+          <span>GGS</span>
+        </div>
+      
+       
+        <div class="navbar-store">
+          <a aria-label="GGS front page" href="GenericGameStore.html">
+            <button>Store</button>
+          </a>
+        </div>
+      
+        <!-- Right: Login and Cart -->
+        <div class="navbar-right">
+          <a href="Login.html" id="loginLink">
+            <button>Login</button>
+          </a>
+          <a href="Cart.html">
+            <button>Cart</button>
+          </a>
+        </div>
+      </div>
+    <div class="content">
+      <div class="game-item">
+        <img src="../bilder/Political revolution.png" alt="Political Revolution" class="game-image">
+        <h2>Political Revolution</h2>
+        <p>Overthrow a country politically in this thrilling game of strategy and rebellion.</p>
+        <button id="addToCartBtn" style="display:none;">Add to Cart</button>
+
+        <script src="../Js/cart.js"></script>
+        <script>
+          const gameData = {
+            title: 'Political revolution',
+            description: 'Overthrow a country politically in this thrilling game of strategy and rebellion.',
+          };
+          setupAddToCartButton('addToCartBtn', () => gameData);
+        </script>
+      </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a class="nav" href="OmGGS.html">Om GGS</a></li>
+            <li><a class="nav" href="Jobb.hmtl">Jobb</a></li>
+            <li><a class="nav" href="Support.html">Support</a></li>
+            <li><a class="nav"  href="twitter.com">X</a></li>      
+    </ul></div>
+    <div class=reklam>
+      <img class="reklampicture" src="../bilder/Are you sure.png" alt="reverse_watermelon"><br>
+      <img class="reklampicture" src="../bilder/Le Sigma.png" alt="memes_the_dna_of_the_soul"><br>
+      <img class="reklampicture" src="../bilder/Konflikt verktyg.png" alt="star wars meme"><br>
+      <img class="reklampicture" src="../bilder/Sea salt.png" alt="terraria meme">
+       </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

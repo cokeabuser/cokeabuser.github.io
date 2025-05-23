@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/GenericDesign.css">
+</head>
+<body>
+    <button id="logoutButton" hidden>Logout</button>
+    <script src="../Js/Script.js"></script>
+<div class="container">
+    <div class="header stickynavbar navbar">
+        <!-- Left: Logo and GGS -->
+        <div class="navbar-left">
+          <img src="../bilder/ChatGPT GGS logo.png" alt="GGS Logo">
+          <span>GGS</span>
+        </div>
+      
+       
+        <div class="navbar-store">
+          <a aria-label="GGS front page" href="GenericGameStore.html">
+            <button>Store</button>
+          </a>
+        </div>
+      
+        <!-- Right: Login and Cart -->
+        <div class="navbar-right">
+          <a href="Login.html" id="loginLink">
+            <button>Login</button>
+          </a>
+          <a href="Cart.html">
+            <button>Cart</button>
+          </a>
+        </div>
+      </div>
+      <div class="content" style="text-align: center; color: white; font-family: Arial, sans-serif;">
+        <div class="video-container" style="margin-bottom: 20px;">
+          <video controls>
+            <source src="../Video/WIN_20250522_19_26_45_Pro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h2>Sea Salt</h2>
+        <p style="max-width: 480px; margin: 0 auto;">
+          Dive into the exciting world of <strong>Sea Salt</strong>, a unique mining adventure game where you explore the ocean floor to extract precious sea salt. Manage resources, upgrade your equipment, and uncover hidden treasures as you mine your way to success beneath the waves.
+        </p>
+        <button id="addToCartBtn" style="display:none;">Add to Cart</button>
+
+<script src="../Js/cart.js"></script>
+<script>
+  const gameData = {
+    title: 'Sea Salt',
+    description: 'Dive into the exciting world of Sea Salt...',
+  };
+  setupAddToCartButton('addToCartBtn', () => gameData);
+</script>
+      </div>
+    <div class="footer">
+        <ul>
+            <li><a class="nav" href="OmGGS.html">Om GGS</a></li>
+            <li><a class="nav" href="Jobb.hmtl">Jobb</a></li>
+            <li><a class="nav" href="Support.html">Support</a></li>
+            <li><a class="nav"  href="twitter.com">X</a></li>    
+    </ul></div>
+    <div class=reklam>
+      <img class="reklampicture" src="../bilder/Political revolution.png" alt="reverse_watermelon"><br>
+      <img class="reklampicture" src="../bilder/Le Sigma.png" alt="memes_the_dna_of_the_soul"><br>
+      <img class="reklampicture" src="../bilder/Konflikt verktyg.png" alt="star wars meme"><br>
+      <img class="reklampicture" src="../bilder/John horror.png" alt="terraria meme">
+       </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

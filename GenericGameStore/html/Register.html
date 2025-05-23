@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/GenericDesign.css">
+</head>
+<body>
+ 
+
+<div class="container">
+  <div class="header stickynavbar navbar">
+    <!-- Left: Logo and GGS -->
+    <div class="navbar-left">
+      <img src="bilder/ChatGPT GGS logo.png" alt="GGS Logo">
+      <span>GGS</span>
+    </div>
+  
+   
+    <div class="navbar-store">
+      <a aria-label="GGS front page" href="GenericGameStore.html">
+        <button>Store</button>
+      </a>
+    </div>
+  
+    <!-- Right: Login and Cart -->
+    <div class="navbar-right">
+      <a href="Login.html" id="loginLink">
+        <button>Login</button>
+      </a>
+      <a href="Cart.html">
+        <button>Cart</button>
+      </a>
+    </div>
+  </div>
+    <div class="login-box content" style="background-color: black;"> <form id="registrationForm" action="/action_page.php" target="_blank" method="post">
+        <label for="Email">Email:<span class="mandatory">*</span></label><br>
+        <input type="email" id="Email" name="Email" required aria-required="true" placeholder="Email" required=""><br>
+  
+        <label for="Password">Password:<span class="mandatory">*</span></label><br>
+        <input type="password" id="Password" name="password" required aria-required="true" placeholder="password" required="" minlength="6"><br>
+  
+        <label for="Repeat_Password">Repeat Password:<span class="mandatory">*</span></label><br>
+        <input type="password" id="Repeat_Password" name="Repeat_Password" required aria-required="true" minlength="6"><br>
+
+        <label for="registreringsvillkor">Do you accept the Registreringsvillkor<span class="mandatory">*</span></label>
+        <input type="checkbox" id="registreringsvillkor" name="registreringsvillkor" required aria-required="true"><br>
+  
+        <input type="submit" value="Registrera">
+        <p id="demo"></p>
+      </form>
+  
+      </div>
+    <div class="footer">
+        <ul>
+        <li><a class="nav" href="OmGGS.html">Om GGS</a></li>
+        <li><a class="nav" href="Jobb.hmtl">Jobb</a></li>
+        <li><a class="nav" href="Support.html">Support</a></li>
+        <li><a class="nav"  href="twitter.com">X</a></li>    
+    </ul></div>
+    <script src="../Js/Register.js"></script>
+</body>
+
+</html>

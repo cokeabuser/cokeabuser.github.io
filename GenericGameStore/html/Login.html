@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/GenericDesign.css">
+</head>
+<body>
+ 
+
+<div class="container">
+  <div class="header stickynavbar navbar">
+    <!-- Left: Logo and GGS -->
+    <div class="navbar-left">
+      <img src="../bilder/ChatGPT GGS logo.png" alt="GGS Logo">
+      <span>GGS</span>
+    </div>
+  
+   
+    <div class="navbar-store">
+      <a aria-label="GGS front page" href="GenericGameStore.html">
+        <button>Store</button>
+      </a>
+    </div>
+  
+    <!-- Right: Login and Cart -->
+    <div class="navbar-right">
+      <a href="Login.html" id="loginLink">
+        <button>Login</button>
+      </a>
+      <a href="Cart.html">
+        <button>Cart</button>
+      </a>
+    </div>
+  </div>
+    <div class="login-box content" style="background-color: black;"><form id="logingform" action="/action_page.php" target="_blank" method="post">
+        <label for="Email">Email:<span class="mandatory">*</span></label><br>
+        <input type="email" id="Email" name="Email" required aria-required="true" placeholder="Email" required=""><br>
+        <label for="Password">Password:<span class="mandatory">*</span></label><br>
+        <input type="password" id="Password" name="Password" required aria-required="true" placeholder="Password" required="" minlength="6"><br>
+        
+        
+      <input type="submit" value="logga in">
+    </form>
+     </div>
+    <div class="footer">
+      <div class="footer-info">
+        <div class="register-link">
+          <a>Ny på GGS?</a><br><a class="link" href="Register.html" >skapa ett konto</a>
+        </div>
+        <div class="slogan">
+          <h2>Det är grattis och enkelt</h2>
+        </div>
+      </div>
+      
+        <ul>
+          <li><a class="nav" href="OmGGS.html">Om GGS</a></li>
+          <li><a class="nav" href="Jobb.hmtl">Jobb</a></li>
+          <li><a class="nav" href="Support.html">Support</a></li>
+          <li><a class="nav"  href="twitter.com">X</a></li>      
+    </ul></div>
+    <script src="../Js/Login.js"></script>
+    
+</body>
+
+</html>
