@@ -104,7 +104,12 @@ ul {
 .login-box input[type="submit"]:hover {
     background-color: #ddd;
 }
-
+@media (max-width: 600px) {
+  .login-box {
+    width: 90%;         /* Shrink width on small screens */
+    padding: 20px;      /* Reduce padding */
+  }
+}
 .footer-info {
   display: flex;
   justify-content: center;       
