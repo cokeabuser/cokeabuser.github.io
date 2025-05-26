@@ -262,6 +262,18 @@ ul {
   visibility: visible;
   opacity: 1;
 }
+@media (max-width: 768px) {
+  .tooltip .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    position: static;       /* Stack under the game title */
+    background-color: transparent;
+    color: black;
+    padding: 0;
+    margin-top: 4px;
+    text-align: left;
+  }
+}
 .video-container {
   display: flex;
   justify-content: center;
