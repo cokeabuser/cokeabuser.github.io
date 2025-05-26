@@ -7,22 +7,22 @@
     <button id="logoutButton" hidden>Logout</button>
     <script src="../Js/Script.js"></script>
 <div class="container">
-    <div class="header stickynavbar navbar">
+   <div class="header stickynavbar navbar">
         <!-- Left: Logo and GGS -->
-        <div class="navbar-left">
+        <div class="navbar-left"><!--puts the stuff to the left in the navbar -->
           <img src="../bilder/ChatGPT GGS logo.png" alt="GGS Logo">
           <span>GGS</span>
-        </div>
-      
-       
-        <div class="navbar-store">
           <a aria-label="GGS front page" href="GenericGameStore.html">
-            <button>Store</button>
+            <button class="store-button">Store</button>
           </a>
         </div>
       
+       
+      
+      
         <!-- Right: Login and Cart -->
-        <div class="navbar-right">
+        <div class="navbar-right"> <!--puts the stuff to the right in the nav bar -->
+          <button id="logoutButton" hidden>Logout</button> <!-- Hides the logout bottun-->
           <a href="Login.html" id="loginLink">
             <button>Login</button>
           </a>
@@ -30,7 +30,7 @@
             <button>Cart</button>
           </a>
         </div>
-      </div>
+      </div> 
       <div class="content" style="text-align: center; color: white; font-family: Arial, sans-serif;">
         <div class="video-container" style="margin-bottom: 20px;">
           <video controls>
