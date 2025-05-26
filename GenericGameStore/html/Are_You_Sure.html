@@ -37,6 +37,16 @@
         <img src="../bilder/Are you sure.png" alt="Are You Sure" class="game-image">
         <h2>Are You Sure</h2>
         <p>Are you sure you want to play this dumpster fire of a game? Try it and find out!</p>
+         <button id="addToCartBtn" style="display:none;">Add to Cart</button>
+
+        <script src="../Js/Cart.js"></script>
+        <script>
+          const gameData = {
+            title: 'John horror',
+            description: 'Love horror? No? Then squack off! If yes, prepare for some chills and thrills.',
+          };
+          setupAddToCartButton('addToCartBtn', () => gameData);
+        </script>
       </div>
     </div>
     <div class="footer">
