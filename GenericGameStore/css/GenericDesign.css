@@ -184,6 +184,36 @@ ul {
   display: flex;
   gap: 10px;
 }
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-left,
+  .navbar-store,
+  .navbar-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* allow wrapping */
+  }
+
+  .navbar-left img {
+    height: 30px;
+  }
+
+  .navbar-right button {
+    flex: 1 1 45%;
+    margin: 5px 0;
+  }
+
+  .navbar-store button {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
+}
 /* Mobil verasion */
 @media (max-width: 600px) {
   ul.navbar {
