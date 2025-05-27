@@ -1,38 +1,38 @@
 (function () {
-    const USER_KEY = 'user';
+    const USER_KEY = 'user'; // Makes the const user_key=user, Const can't be changed by the assingment operator
   
-    function getCurrentUserEmail() {
-      const userJSON = localStorage.getItem(USER_KEY);
-      if (!userJSON) return null;
+    function getCurrentUserEmail() {// gets the email of curenlty logged in user
+      const userJSON = localStorage.getItem(USER_KEY);// puts the cons userJSON to be the email from the logged in user
+      if (!userJSON) return null;// if no user is found it returns null and does nothing 
       try {
-        const user = JSON.parse(userJSON);
-        return user.Email || null;
+        const user = JSON.parse(userJSON);// makes the const user to be the user email
+        return user.Email || null;// returns the email or null
       } catch {
         return null;
       }
     }
   
-    function getCartKey() {
-      const email = getCurrentUserEmail();
-      return email ? `cart_${email}` : null;
+    function getCartKey() {// a function to make a unique cart key for the currently logged in user
+      const email = getCurrentUserEmail();// get the user from the previes function
+      return email ? `cart_${email}` : null;// returns cart_"email" if the email exists other wise returns null
     }
   
-    function getCart() {
-      const key = getCartKey();
+    function getCart() {// a funktion to load the cart for the current user from localStorage
+      const key = getCartKey();// makes the const key the cart key made in the previus function
       if (!key) return [];
       const cartJSON = localStorage.getItem(key);
-      return cartJSON ? JSON.parse(cartJSON) : [];
+      return cartJSON ? JSON.parse(cartJSON) : [];// returns the cart list if it exists
     }
   
-    function saveCart(cart) {
+    function saveCart(cart) {//a function to save the cart for the current user to localStorage
       const key = getCartKey();
       if (!key) return;
-      localStorage.setItem(key, JSON.stringify(cart));
+      localStorage.setItem(key, JSON.stringify(cart));/
     }
   
-    // Add item to cart without duplicates
-    window.addItemToCart = function (item) {
-      const email = getCurrentUserEmail();
+   
+    window.addItemToCart = function (item) { // Adds a game to the cart if user is logged in and it's not already in cart
+      const email = getCurrentUserEmail();// takes the email from the function
       if (!email) {
         alert('Please log in to add items to the cart.');
         return;
@@ -51,15 +51,15 @@
     };
   
     // Setup button logic on game pages
-    window.setupAddToCartButton = function (buttonId, getGameData) {
+    window.setupAddToCartButton = function (buttonId, getGameData) {//Activates and shows the add-to-cart button on game pages
       document.addEventListener('DOMContentLoaded', () => {
         const btn = document.getElementById(buttonId);
         if (!btn) return;
   
         if (getCurrentUserEmail()) {
-          btn.style.display = 'inline-block';
+          btn.style.display = 'inline-block';// Shows button if logged in
         } else {
-          btn.style.display = 'none';
+          btn.style.display = 'none';// Hides the button if not logged in
         }
   
         btn.addEventListener('click', () => {
@@ -73,7 +73,7 @@
       });
     };
   
-    // Render cart page
+     // Renders the cart contents on the cart page
     function renderCart() {
       const cart = getCart();
       const container = document.getElementById('cart-content');
@@ -93,7 +93,7 @@
       container.innerHTML = html;
     }
   
-    // Remove item from cart by index
+   // Removes item at the given index from the cart
     window.removeFromCart = function (index) {
       let cart = getCart();
       cart.splice(index, 1);
